@@ -1,0 +1,70 @@
+body{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:space-evenly;
+ height:100vh;
+ background-color:whitesmoke;
+ font-size:1.5rem;
+ font-family:sans-serif;
+}
+.textContainer{
+    width:90vw;
+    height:15vh;
+    background:white;
+    box-shadow:0 0 20px 2px grey;
+    border-radius:0.5rem;
+    padding:1rem;
+    
+    font-family:sans-serif;
+    outline:none;
+    display:flex;
+    flex-direction:column-reverse;
+    overflow-y:scroll;
+    
+
+}
+.keyboard{
+   height:50vh;
+   width:70vw;
+   background-color:darkgrey;
+   border-radius:1rem;
+   display:flex;
+   flex-direction:column;
+   justify-content:space-evenly;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+
+.secondLast{
+    width:60%;
+    margin:0 auto;
+}
+
+
+
+.space{
+    width:50%;
+    height:2rem;
+    background: grey;
+}
+
+.key{
+    padding:0.5rem;
+    border-radius:2px;
+}
+
+
+.key:active{
+    background: white;
+
+}
+
+.active{
+    background: whitesmoke;
+}

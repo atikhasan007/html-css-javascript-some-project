@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hamburger {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer; 
+}
+
+.top-bar, .middle-bar, .bottom-bar { 
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    margin:3px 0;
+    transform-origin:left;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Active অবস্থায় Top-bar ঘুরবে */
+.hamburger.active .top-bar {
+    transform: rotate(45deg);
+}
+
+/* Middle-bar অদৃশ্য হবে */
+.hamburger.active .middle-bar {
+    opacity: 0;
+    transform: translateX(1rem); 
+}
+
+/* Bottom-bar ঘুরবে */
+.hamburger.active .bottom-bar {
+    transform: rotate(-45deg);
+}
